@@ -1,0 +1,60 @@
+/* color schme for product page */
+:root {
+  --c-blue-dark: #002772;
+  --c-blue-light: #d6e6ff;
+  --c-pink-light: #fde2ff;
+  --c-gray-dark: #1e1e1e;
+  --c-gray-medium: #3f3f3f;
+  --c-gray-light: #dcdcdc;
+  --c-purple-dark: #720060;
+  --c-white: #ffffff;
+}
+
+/* semantic color variables for this project */
+:root {
+  /* color background if unavailable */
+  --color-background: linear-gradient(
+    var(--c-gray-light) 0%,
+    var(--c-gray-light) 70%,
+    var(--c-white) 70%,
+    var(--c-white) 100%
+  );
+
+  --color-background-women: linear-gradient(
+    var(--c-pink-light) 0%,
+    var(--c-pink-light) 70%,
+    var(--c-white) 70%,
+    var(--c-white) 100%
+  );
+
+  --color-background-men: linear-gradient(
+    var(--c-blue-light) 0%,
+    var(--c-blue-light) 70%,
+    var(--c-white) 70%,
+    var(--c-white) 100%
+  );
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
